@@ -1,0 +1,32 @@
+{# Since you are overriding the template you want to extend from, you would end up in an infinite loop error. 
+The solution is to use the special ! prefix in the template name to tell Symfony that you want to extend from 
+the original template, not from the overridden one #}
+{# https://symfony.com/doc/current/bundles/override.html #}
+
+{# Overide/extend vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/index.html.twig #}
+{% extends '@!EasyAdmin/crud/index.html.twig' %}
+
+{% block main %}
+    <div class="row">
+        <div class="col">
+            {# render all parent template output (the list view) #}
+            {{ parent() }}
+        </div>
+        <div class="col-auto px-0 ms-4" style="width: 220px; background-color: rgb(248, 250, 252); border-left: 1px solid #DDDDDD;">
+            <div class="row p-3 pt-2">
+                <div class="col fw-bold" style="font-size: 1rem;">Filters</div>
+                <div class="col text-end">
+                    <button type="button" id="sidebar-filters-apply" class="btn btn-primary">
+                        Apply
+                    </button>
+                </div>
+            </div>
+
+            {# Ajax filters content is inserted here #}
+            <div id="sidebar-filters">
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
