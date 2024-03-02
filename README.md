@@ -1,4 +1,4 @@
-# easyadminSidebarFilters
+# Symfony Easyadmin Sidebar Filters (No Modal)
 Symfony Easyadmin: Temporary solution for permanent filters in a sidebar (no modal)
 
 Notes: 
