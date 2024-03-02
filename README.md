@@ -2,16 +2,14 @@
 Symfony Easyadmin: Temporary solution for permanent filters in a sidebar (no modal)
 
 Notes: 
-- This is just a hacky prototype in userspace
+- This is just a hacky prototype in user space
 - Tested with Easyadmin 3
 
-Sadly Easyadmin only supports filters in a popup (modal).
-This is not very user-friendly and pretty inefficient if you work with the UI on a daily basis.
+Unfortunately, Easyadmin currently supports filters only within a popup (modal). This approach is not particularly user-friendly and can be quite inefficient for daily interaction with the UI.
 
-I think a similar solution could be implemented realtivly easily in Easyadmin itself.
-Probably with a simple config option in DashBoardController.
+I believe that a similar solution could be integrated into Easyadmin itself with relative ease, possibly through a straightforward configuration option in the DashboardController.
 
-Please leave an issue if you're interested in taking this further.
+If you're interested in exploring this idea further, please consider opening an issue.
 
 
 ### Easyadmin Permanent Filters in Sidebar
